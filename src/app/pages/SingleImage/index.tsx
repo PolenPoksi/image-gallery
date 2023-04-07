@@ -48,13 +48,22 @@ function SingleImage() {
 
             <div className={style.lastInfoRow}>
               {currentImage.ups && (
-                <div className={style.imageUps}>{currentImage.ups}</div>
+                <div className={style.alignScores}>
+                  <span className={style.infoDesc}>Ups</span>
+                  <span className={style.imageUps}> {currentImage.ups}</span>
+                </div>
               )}
               {currentImage.score && (
-                <div className={style.imageScore}>{currentImage.score}</div>
+                <div className={style.alignScores}>
+                  <span className={style.infoDesc}>Score</span>
+                  <span className={style.imageScore}>{currentImage.score}</span>
+                </div>
               )}
               {currentImage.downs && (
-                <div className={style.imageDowns}>{currentImage.downs}</div>
+                <div className={style.alignScores}>
+                  <span className={style.infoDesc}>Downs</span>
+                  <span className={style.imageDowns}>{currentImage.downs}</span>
+                </div>
               )}
             </div>
           </Col>

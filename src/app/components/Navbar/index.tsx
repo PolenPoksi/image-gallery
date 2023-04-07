@@ -8,11 +8,6 @@ const Navbar = () => {
         <Link to="/" className={style.appName}>
           AppName
         </Link>
-        {/* Add a logo */}
-        <Link to="/" className={style.appName}>
-          Search
-        </Link>
-        {/* Search feature */}
       </div>
     </div>
   );

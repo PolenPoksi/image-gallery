@@ -50,20 +50,30 @@
       flex-direction: row;
       justify-content: space-between;
       margin-top: 20px;
-      .imageUps {
-        font-size: xx-large;
-        font-weight: 700;
-        color: green;
-      }
-      .imageDowns {
-        font-size: xx-large;
-        font-weight: 700;
-        color: orangered;
-      }
-      .imageScore {
-        font-size: xx-large;
-        font-weight: 700;
-        color: blueviolet;
+      .alignScores {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .imageUps {
+          font-size: xx-large;
+          font-weight: 700;
+          color: green;
+        }
+        .imageDowns {
+          font-size: xx-large;
+          font-weight: 700;
+          color: orangered;
+        }
+        .imageScore {
+          font-size: xx-large;
+          font-weight: 700;
+          color: blueviolet;
+        }
+        .infoDesc {
+          font-size: small;
+          font-weight: 600;
+          color: #717c8c;
+        }
       }
     }
     @media (max-width: 992px) {
